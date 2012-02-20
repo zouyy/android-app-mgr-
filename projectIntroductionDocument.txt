@@ -1,0 +1,37 @@
+Project Introduction Document
+
+Document Control
+0.1.Contributors
+    Author:Haolai TIAN
+    Reviwer:__________
+0.2.History
+    Proposal:2012/02/20 by Haolai TIAN
+
+Table of Contents
+1.General Description
+  1.1.Goal
+  1.2.Countpart
+  1.3.ComponentDescription
+2.Q&A
+
+1.General Description
+  1.1.Goal
+      建立一个私有的APP管理软件，用户能在PC上通过网络管理android手机内的APP，
+      对APP的管理包括：向注册手机添加、删除、更新APP，并维护PC端的APP仓库，
+      对手机的管理包括：注册，分组，以及针对分组的管理策略的实现
+  
+  1.2.Countpart
+      iTunes可以提供针对单APPLE ID设备的APP管理，
+      把APPLE设备通过USB连接到PC后，用户可以通过iTunes软件管理APP
+      
+      我们的软件与之不同的地方在于：
+      (1)iTunes通过usb连线管理APPLE设备，我们可以通过wifi等无线网络管理android手机
+      (2)iTunes只管理单个APPLE ID设备的管理，我们要提供移动设备的注册分组等管理
+      (3)APPLE设备的管理通过iTunes软件实现，我们希望能提供通用的远程web管理界面
+  
+  1.3.ComponentDescription
+      我们的软件分为三个组件：移动设备上的APP，服务器上的管理模块，以及通过网络访问的用户界面
+      如果个人用户使用，用户可以通过浏览器访问本地的web服务，所以软件的安装应该尽量简便，自带web服务器
+      如果集团用户使用，用户可以通过浏览器访问服务器端的web服务，所以软件也应该提供针对通用web服务器的API
+
+2.Q&A
